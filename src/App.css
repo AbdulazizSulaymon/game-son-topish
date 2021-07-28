@@ -1,0 +1,91 @@
+body {
+  background-image: url("back.png");
+  background-size: cover;
+  min-height: 100vh;
+  background-position: bottom left;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+.title {
+  text-shadow: 0 6px 10px rgba(0, 19, 48, 0.35);
+}
+
+input {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 10px 40px 0 rgba(5, 57, 104, 0.4);
+  outline: none !important;
+  font-size: 20px !important;
+}
+
+.btn-blue {
+  background-color: #1584cc;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 8px 30px;
+  font-size: 20px;
+  box-shadow: 0 10px 40px 0 rgba(5, 57, 104, 0.7);
+  outline: none !important;
+  border: none !important;
+  transition: 0.3s;
+}
+.btn-blue:hover {
+  box-shadow: 0 10px 30px 0 rgba(5, 57, 104, 0.8);
+}
+
+#modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modal .modal-panel {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 15px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.5);
+  animation-name: zoomin;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+#modal .modal-panel .icon {
+  position: absolute;
+  height: 140px;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#modal .modal-panel p {
+  margin: 10px 0;
+  text-shadow: 0 4px 7px rgba(0, 0, 0, 0.6);
+}
+#modal #success {
+  background: linear-gradient(91.41deg, #71eb5d 5.33%, #b8bb32 92.84%);
+}
+#modal #error {
+  background: linear-gradient(91.41deg, #eb5d5d 5.33%, #bb7432 92.84%);
+  border: 4px solid rgba(139, 36, 30, 0.7);
+}
+
+@keyframes zoomin {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
